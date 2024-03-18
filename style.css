@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8FAFC;
+}
+nav{
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav_div{
+    height: 44px;
+    width: 100%;
+    margin: 0 17px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .nav_div img:hover{
+    cursor: pointer;
+}
+.nav_div .nav_content_div{
+    height: 100%;
+    width: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_div .nav_content_div ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_content_div ul .nav_item svg{
+    height: 20px;
+    width: 20px;
+}
+.nav_content_div ul .nav_item{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_content_div ul .nav_item:hover{
+    color: #F65B66;
+    cursor: pointer;
+}
+.nav_div .nav_content_div .nav_btn{
+    height: 44px;
+    width: 140px;
+    background-color: #F65B66;
+    border: 1px solid #F65B66;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-left: 40px;
+}
+.nav_content_div .nav_btn:hover{
+    background-color: #EE414D;
+    cursor: pointer;
+}
+main .main_poster{
+    width: 100vw;
+    height: 465px;
+    background: linear-gradient(285.47deg, #002566 -11.15%, #7308DA -11.14%, #9800FF -8.21%, #161F7C -4.38%, #2E62ED 77.98%, #256BEC 80.23%, #1C74EB 84.75%, #20CAF2 101.67%);
+}
+main .main_poster .poster_content_box{
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 18px;
+}
+main .main_poster .poster_content_box .content{
+    height: 100%;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.content span{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.content h1{
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.content p{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 18px;
+}
+.main_card_section{
+    padding: 112px 0px;
+    overflow: hidden;
+    height: auto;
+}
+.recent{
+    width: 100%;
+    height: 24px;
+}
+.main_card_section .cards_container{
+    max-width: 1280px;
+    margin: auto;
+    height: auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.cards_container .courses_level{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses_level> span, .recent> span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #64748b;
+    letter-spacing: 2px;
+}
+.cards_container .courses_level .all_levels{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+.all_levels .l_btn{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #64748b;
+    background-color: white;
+    border: 2px solid #E2E8F0;
+}
+.all_levels .l_btn img{
+    margin-right: 9px;
+}
+.all_levels .btn_beg:hover, .btn_inter:hover, .btn_adv:hover{
+    background-color: #F8FAFC;
+    cursor: pointer;
+}
+.all_levels .btn_all{
+    background-color: #2D5FE8;
+    color: white;
+}
+.all_levels .btn_all:hover{
+    cursor: pointer;
+}
+.main_card_section .cards_container .card{
+    width: 100%;
+    height: 438px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+    display: flex;
+}
+.card:hover{
+    transform: translateY(-7px);
+}
+.card .card_image{
+    height: 100%;
+    width: 410.66px;
+    text-decoration: none;
+}
+.card_image:hover{
+    cursor: pointer;
+}
+.card .card_image .top{
+    width: 100%;
+    height: 110px;
+    background-color: #B6BFCA;
+    border-top-left-radius: 12px;
+}
+.card .card_image .middle{
+    width: 100%;
+    height: 218px;
+    background-image: url(assets/card_images/card_1.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.card .card_image .bottom{
+    width: 100%;
+    height: 110px;
+    background-color: #B6BFCA;
+    border-bottom-left-radius: 12px;
+    padding: 20px 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .card_image .bottom span{
+    color: #E5E5E5;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.play_box{
+    height: 48px;
+    width: 48px;
+    background-color: #F65B66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .course_info{
+    padding: 28px;
+}
+.card .course_info h1{
+    font-size: 26px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.card .course_info p{
+    margin: 12px 0 0 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748b;
+}
+.card .course_info ul{
+    padding:0 0 0 26px;
+    margin: 10px 0 20px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748b;
+}
+.card .course_info ul li{
+    margin: 10px 0;
+    padding: 0 0 0 6px;
+}
+.course_req{
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #64748b;
+    margin-top: 53px;
+}
+.course_req .grid_item{
+    display: flex;
+    align-items: center;
+}
+.grid_item img{
+    margin: 6px 12px 0 0;
+} 
+.span{
+    grid-column: span 2;
+}
+.course_info .card_button{
+    width: 100%;
+    height: 46px;
+    margin: 24px 0 0 0;
+    display: flex;
+    column-gap: 1.5rem;
+}
+.course_info .card_button .enroll_box{
+    height: 100%;
+    width: 170px;
+    background-color: #F65B66;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.enroll_box a{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.course_info .card_button .enroll_box:hover{
+    background-color: #EE414D;
+    cursor: pointer;
+}
+.course_info .card_button .learn_more_box{
+    height: 100%;
+    width: 170px;
+    background-color: white;
+    border: 1px solid #F65B66;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.learn_more_box a{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F65B66;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.course_info .card_button .learn_more_box:hover{
+    background-color: #FEEEEF;
+    cursor: pointer;
+}
+.bottom_poster_section{
+    width: 100vw;
+    padding: 112px 0;
+    background-color: white;
+}
+.bottom_poster_section .bottom_poster_div{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+.bottom_poster_section .bottom_poster_div h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0 0 36px 0;
+}
+.bottom_poster_div .bot_poster{
+    width: 100%;
+    height: 487.46px;
+    background: linear-gradient(316deg, #002566 0%, #161F7C 6.00%, #7308DA 30.00%, #9800FF 40.00%, #2E62ED 78.00%, #256BEC 81.00%, #1C74EB 85.00%, #20CAF2 100%);;
+    border-radius: 0.75rem;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom_poster_div .bot_poster .content_div{
+    height: 100%;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.bot_poster .content_div .heading{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 25px;
+}
+.bot_poster .content_div p{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.bot_poster .content_div span{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.bot_poster .content_div button{
+    width: 165px;
+    height: 60px;
+    padding: 0 20px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #F65B66;
+    border: 1px solid #F65B66;
+    border-radius: 9px;
+    margin-top: 45px;
+}
+.bot_poster .content_div button:hover{
+    background-color: #EE414D;
+    cursor: pointer;
+}
+.quote_section{
+    width: 100vw;
+    height: 367px;
+    padding-bottom: 112px;
+    background-color: white;
+}
+.quote_section .quote_div{
+    max-width: 70vw;
+    height: 255px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.quote_section .quote_div .para{
+    width: 83%;
+    color: rgb(100, 116, 139);
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+.quote_section .quote_div .author{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+footer{
+    height: 302px;
+    width: 100vw;
+    padding: 64px;
+    background-color: #455B66;
+}
+footer .footer_main_div{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+.footer_main_div .footer_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_main_div .footer_content a{
+    color: #F65B66;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 20px;
+}
+.footer_main_div .footer_content a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer_main_div .social_icons{
+    display: flex;
+    align-items: end;
+}
+.footer_main_div .social_icons img{
+    height: 24px;
+    width: 24px;
+    margin: 12px;
+}
+.footer_main_div .social_icons img:hover{
+    cursor: pointer;
+}
